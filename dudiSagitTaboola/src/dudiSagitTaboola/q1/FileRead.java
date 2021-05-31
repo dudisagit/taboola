@@ -71,7 +71,7 @@ public class FileRead {
 	}
 	public void writeFileOutPut(String fileName) {
 		try {
-		      FileWriter myWriter = new FileWriter("C://output/"+fileName+".txt");
+		      FileWriter myWriter = new FileWriter(fileName+".txt");
 		      for (Line line : this.lines) {
 			      myWriter.write(line.changeLineToInt() + "\n");
 		      }

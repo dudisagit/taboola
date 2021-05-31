@@ -9,10 +9,10 @@ public class Q1 {
 		// TODO Auto-generated method stub
 		//Q1a
 		FileRead file1 = new FileRead("c://", "input_Q1a.txt");
-		file1.writeFileOutPut("output");
+		file1.writeFileOutPut("C://output/output");
 		//Q1a
 		FileRead file2 = new FileRead("c://", "input_Q1b.txt");
-		file2.writeFileOutPut("output2");
+		file2.writeFileOutPut("C://output/output2");
 	}
 
 }

@@ -1,5 +1,6 @@
 package dudiSagitTaboola.q2;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
@@ -46,6 +47,10 @@ public class MyClass {
 	}
 
 	public boolean isHistoric() throws NullPointerException{
-		return time.before(new Date());
+		LocalDateTime localDateTime =LocalDateTime.now();
+		Date today = new Date(localDateTime.getYear(),localDateTime.getMonthValue(),localDateTime.getDayOfMonth());
+		Date timeParse = new Date(time.getYear(),time.getMonth(),time.getDate());
+
+		return timeParse.before(today);
 	}
 }
